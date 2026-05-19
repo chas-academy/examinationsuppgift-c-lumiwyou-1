@@ -12,7 +12,6 @@
 #define STUDENTS_COUNT 5
 #define MAX_NAME_LENGTH 10
 #define SCORES_COUNT 13
-#define MAX_SCRORE 10
 
 //#define MIN_UPPERCASE 65
 //#define MAX_UPPERCASE 90
@@ -91,7 +90,7 @@ int main(void) {
      */
     // Läs in studenter och deras poäng
     StudentResult students[STUDENTS_COUNT];
-    //memset(students, 0, sizeof(students));
+    memset(students, 0, sizeof(students));
 
     // Iterera och inhämta studenter
     for(int s = 0; s < STUDENTS_COUNT; s++) {
